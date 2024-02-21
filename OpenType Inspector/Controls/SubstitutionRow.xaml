@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="OpenTypeInspector.SubstitutionRow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:code="clr-namespace:OpenTypeInspector">
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Margin="5,0" VerticalAlignment="Center">
+            <Run Text="{Binding ItemHeader, Mode=OneTime}" />
+            <Run Text=":" />
+        </TextBlock>
+        <ItemsControl ItemsSource="{Binding SubstitutionItem.PreComponentItems, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, Mode=OneTime}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <code:GlyphBox GlyphSize="{Binding GlyphSize, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" GlyphItem="{Binding}" 
+                                   Foreground="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TextBlock Margin="5,0" Text="→" VerticalAlignment="Center" />
+        <ItemsControl ItemsSource="{Binding SubstitutionItem.PostComponentItems, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}, Mode=OneTime}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <code:GlyphBox GlyphSize="{Binding GlyphSize, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" GlyphItem="{Binding}" 
+                                   Foreground="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</UserControl>
