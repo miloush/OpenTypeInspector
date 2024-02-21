@@ -12,10 +12,10 @@ Features:
  * Filtering glyphs and characters by glyph number, Unicode names and codepoints.
  * Overview of script and feature tags for both GSUB and GPOS with list of features and lookups they use.
  * Visualization of single, multiple, alternate, ligature and context substitutions, with filtering by glyph number involved. (Note: visualization of chaining substitutions is not implemented)
- * Loading fonts from system, user and custom folders. Font files can also be dropped on the font list. Fonts with zero substitutions are not listed, but can be dropped.
+ * Loading fonts from system, user and custom folders. Font files can also be dropped on the font list. Fonts with zero substitutions are not listed, but can be dropped. Loading can be stopped by pressing the <kbd>Esc</kbd> key.
  * Experimental typing area with various typography controls as available in WPF.
 
-The application uses WPF features for displaying glyphs. It does not directly parse font files or test text shaping.
+The application uses WPF features for displaying glyphs. It does not directly parse font files or test text shaping. Only font file types supported by WPF will be shown.
 
 ![image](https://github.com/miloush/OpenTypeInspector/assets/10546952/01f9c8f0-525c-4a3b-9741-c111aedc75c2)
 
