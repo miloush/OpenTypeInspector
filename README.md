@@ -19,4 +19,6 @@ The application uses WPF features for displaying glyphs. It does not directly pa
 
 ![image](https://github.com/miloush/OpenTypeInspector/assets/10546952/01f9c8f0-525c-4a3b-9741-c111aedc75c2)
 
+![image](https://github.com/miloush/OpenTypeInspector/assets/10546952/5796d9d6-a4b6-4632-bbd3-987906ccd52f)
+
 ![image](https://github.com/miloush/OpenTypeInspector/assets/10546952/2a470a23-2ec8-4c1d-8924-69f4ca6ab9f4)
