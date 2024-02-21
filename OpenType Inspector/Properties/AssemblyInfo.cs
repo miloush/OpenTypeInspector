@@ -8,11 +8,11 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OpenType Inspector")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A tool for exploring OpenType files")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("OpenTypeInspector")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCopyright("Copyright © Jan Kučera 2012-2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,22 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+
+// 2.0.0.0
+//  New features:
+//  - search by characters
+//  - type characters
+//  - preserve view filters on font change
+//  - Alt+X support in character search
+//  - stop loading fonts on folder change
+//  - initial GDEF and GPOS support
+//  - glyph classes
+//  - 15.1 character names
+//  - copy file paths from context menu
+//  - allow dropping fonts without OT features
+//  Bug fixes:
+//  - glyph based GSUB crash
+//  - Search filter surrogates
+//  - chaining substitutions crash
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
